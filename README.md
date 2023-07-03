@@ -19,7 +19,7 @@ Getting Started
 Clone the repository:
 shell
 Copy code
-git clone https://github.com/your-username/bus-booking-app.git
+git clone https://github.com/sobhiT-upadhyay/DIGITAL-DIVINE-9.7.git
 Configure the database connection in the application.properties file.
 
 Build and run the application:
