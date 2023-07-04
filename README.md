@@ -13,18 +13,17 @@ Technologies Used
 Java
 Spring Boot
 Hibernate
-MySQL (or any other preferred database)
+MySQL 
 RESTful API design principles
 Getting Started
 Clone the repository:
-shell
-Copy code
 git clone https://github.com/sobhiT-upadhyay/DIGITAL-DIVINE-9.7.git
 Configure the database connection in the application.properties file.
 
 Build and run the application:
 
 Access the application in your web browser at http://localhost:8080.
+
 API Endpoints
 GET /buses: Get a list of available buses.
 GET /buses/{id}: Get details of a specific bus.
