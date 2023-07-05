@@ -1,5 +1,7 @@
 package com.booking.entities;
 
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
@@ -15,6 +17,7 @@ public class Bus {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @JsonIgnoreProperties("buses") // Ignore this property during serialization
     @ManyToOne
     @JoinColumn(name = "operator_id", referencedColumnName = "id")
     private BusOperator busOperator;

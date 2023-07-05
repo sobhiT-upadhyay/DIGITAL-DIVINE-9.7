@@ -1,5 +1,6 @@
 package com.booking.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
@@ -33,6 +34,7 @@ public class BusOperator {
     @Column(name = "updated_at")
     private Date updatedAt;
 
+    @JsonIgnore//To break the circular reference, you can modify the data model by excluding one side of the relationship from the serialization process
     @OneToMany(mappedBy = "busOperator", cascade = CascadeType.ALL)
     private Set<Bus> buses;
 }
