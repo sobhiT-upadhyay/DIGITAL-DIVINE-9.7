@@ -24,10 +24,15 @@ Build and run the application:
 
 Access the application in your web browser at http://localhost:8080.
 
-API Endpoints
-GET /buses: Get a list of available buses.
-GET /buses/{id}: Get details of a specific bus.
-POST /bookings: Create a new booking.
-GET /bookings/{id}: Get details of a specific booking.
-PUT /bookings/{id}: Update a booking.
-DELETE /bookings/{id}: Cancel a booking.
+API Endpoints for User Module
+GET :  localhost:8080/api/users?page=0&size=2&sort=email,desc
+POST: localhost:8080/api/users/create
+PUT : localhost:8080/api/users/1
+DELETE : localhost:8080/api/users/1
+
+API Endpoints for User Module Download in form of 
+
+Excel: localhost:8080/api/users/download
+Pdf:  localhost:8080/api/users/users/pdf
+Csv: localhost:8080/api/users/users/csv
+
