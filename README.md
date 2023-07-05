@@ -36,3 +36,33 @@ Excel: localhost:8080/api/users/download
 Pdf:  localhost:8080/api/users/users/pdf
 Csv: localhost:8080/api/users/users/csv
 
+
+
+FOr Bus booking Testing has been done by using 
+
+Then Again (Schedule)Post- http://localhost:8080/api/schedules
+{
+"departureTime": "2023-06-10T08:00:00Z",
+"arrivalTime": "2023-09-11T12:00:00Z",
+"price": 90.50,
+"bus":{
+"id":1,
+"busType": "Ac",
+"totalSeats": 20,
+"amenities": " WiFi,Charging ports",
+"busOperator":{
+"id":1,
+"operatorName": "ABC Bus Company",
+"contactEmail": "abc@example.com",
+"contactPhone": "555-555-5555",
+"logoUrl": "https://example.com/logo.png"
+}
+},
+"route": {
+"id":2,
+"origin": "Mumbai",
+"destination": "Chenai",
+"distance": 56789.4
+}
+}
+
