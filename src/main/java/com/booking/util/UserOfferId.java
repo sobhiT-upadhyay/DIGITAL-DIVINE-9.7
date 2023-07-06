@@ -1,22 +1,18 @@
 package com.booking.util;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.io.Serializable;
 import java.util.Objects;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserOfferId implements Serializable {
-
     private Long user;
     private Long offer;
-
-    public UserOfferId() {
-    }
-
-    public UserOfferId(Long user, Long offer) {
-        this.user = user;
-        this.offer = offer;
-    }
-
-    // Getters and setters
 
     @Override
     public boolean equals(Object o) {
@@ -32,4 +28,3 @@ public class UserOfferId implements Serializable {
         return Objects.hash(user, offer);
     }
 }
-
