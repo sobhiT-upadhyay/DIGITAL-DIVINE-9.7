@@ -2,6 +2,7 @@ package com.booking.payload;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
@@ -20,10 +21,13 @@ public class UserPaymentMethodDTO {
     private String cardNumber;
 
     @NotEmpty(message = "Expiration date cannot be empty")
-    private String expirationDate;
+    private String expiryDate;
+
+    @NotEmpty(message = "CVV cannot be empty")
+    @Size(min = 3, max = 3, message = "CVV must be 3 digits")
+    private String cvv;
 
     @NotEmpty(message = "Card holder name cannot be empty")
     @Size(min = 2, max = 100, message = "Card holder name must be between 2 and 100 characters")
     private String cardHolderName;
 }
-

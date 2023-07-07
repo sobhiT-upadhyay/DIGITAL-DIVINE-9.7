@@ -2,6 +2,7 @@ package com.booking.payload;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
@@ -14,4 +15,3 @@ public class RoleDTO {
     @Size(min = 2, max = 50, message = "Role name must be between 2 and 50 characters")
     private String roleName;
 }
-
